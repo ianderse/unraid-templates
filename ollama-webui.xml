@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Ollama-WebUI</Name>
+  <Repository>ollamawebui/ollama-webui</Repository>
+  <Registry>https://hub.docker.com/r/ollamawebui/ollama-webui</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/ollama-webui/ollama-webui</Project>
+  <Overview>ChatGPT-Style Web Interface for Ollama &#x1F999;</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:11431]</WebUI>
+  <TemplateURL/>
+  <Icon>https://ollama.ai/public/ollama.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699292059</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Make sure you have the latest version of Ollama installed before proceeding with the installation. You can find the latest version of Ollama at https://ollama.ai/&#xD;
+&#xD;
+You can also find Ollama in UnRaid in Community Apps</Requires>
+  <Config Name="OLLAMA_API_BASE_URL=" Target="OLLAMA_API_BASE_URL=" Default="" Mode="" Description="leave blank if ollama is running locally" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Port 1" Target="11431" Default="11431" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11431</Config>
+</Container>
