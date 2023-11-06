@@ -9,7 +9,10 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/jmorganca/ollama</Project>
-  <Overview>Ollama makes it easy to get up and running with large language models locally.</Overview>
+  <Overview>Ollama makes it easy to get up and running with large language models locally.&#xD;
+Ollama-WebUI also available in Community Apps&#xD;
+&#xD;
+--gpus=all extra param needed for gpu support. Delete for CPU-only.</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:11434]</WebUI>
   <TemplateURL/>
@@ -17,9 +20,11 @@
   <ExtraParams>--gpus=all</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699284214</DateInstalled>
+  <DateInstalled>1699295653</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Host Port 1" Target="11434" Default="11434" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11434</Config>
+  <Config Name="OLLAMA_ORIGINS=" Target="OLLAMA_ORIGINS=" Default="*" Mode="" Description="Needed for Ollama WebUI (Separate App Installation)" Type="Variable" Display="always" Required="false" Mask="false">*</Config>
+  <Config Name="Host Path for /root/.ollama" Target="/root/.ollama" Default="/mnt/user/appdata/ollama/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ollama/</Config>
 </Container>
